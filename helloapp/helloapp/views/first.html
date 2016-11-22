@@ -1,0 +1,15 @@
+<head>
+<h1>Departments:</h1> <br>
+
+<ul>
+    {% for a in dpt reversed%}
+        <li>{{forloop.counter}}. {{a}}</li>
+        <ul>
+        {%for i in points%}
+            <li> {{forloop.parentloop.counter}}->{{i}}</li>
+        {%endfor%}
+        </ul>
+    {% endfor %}
+</ul>
+
+</head>
