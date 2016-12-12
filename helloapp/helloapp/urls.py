@@ -14,5 +14,8 @@ urlpatterns = patterns('',
     url(r'^sum/(\d+)/(\d+)$', tuhinview.sum),
     url(r'^firstpage/$', firstpage.handleFirstPage),
     url(r'^page2/$', firstpage.handleSecondPage),
+    url(r'^dbtest/$', tuhinview.dbtest),
+    url(r'^newword/$', tuhinview.newword),
+    url(r'^test/$', tuhinview.dtest),
     #url(r'^admin/', include(admin.site.urls)),
 )
